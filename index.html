@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trykker&display=swap"
+      rel="stylesheet"
+    />
+    <title>Positivus</title>
+  </head>
+  <body class="bg-cream h-full font-trykker">
+    <nav
+      class="flex items-center sticky top-0 items-center justify-between px-3 h-16 bg-white lg:px-16"
+    >
+      <img src="assets/images/Logo.png" alt="logo" class="h-1/3 object-cover" />
+      <div class="flex flex-col gap-1 lg:hidden">
+        <span class="w-7 bg-black h-1 rounded-md"></span>
+        <span class="w-4 bg-black h-1 rounded-md ml-auto"></span>
+        <span class="w-2 bg-black h-1 rounded-md ml-auto"></span>
+      </div>
+      <div
+        class="absolute top-full left-0 w-0 overflow-hidden px-0 h-fit py-4 flex flex-col gap-4 lg:static lg:flex-row lg:items-center lg:justify-end lg:w-full"
+      >
+        <a href="#">About us</a>
+        <a href="#">Services</a>
+        <a href="#">Use Cases</a>
+        <a href="#">Pricing</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+        <button class="w-fit px-5 py-2 rounded-lg border-2 border-black">
+          Request a quote
+        </button>
+      </div>
+    </nav>
+    <main class="h-full px-3 lg:px-16 py-8">
+      <section class="flex flex-col w-full gap-4">
+        <h1 class="text-4xl">Navigating the digital landscape for success</h1>
+        <img src="assets/images/header-image.png" alt="" />
+      </section>
+    </main>
+
+    <script src="tailwind.config.js"></script>
+  </body>
+</html>
