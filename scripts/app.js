@@ -27,23 +27,23 @@ function toggleAccordion(index) {
 }
 
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  centeredSlides: true,
+  slidesPerView: 2.5,
+  spaceBetween: 60,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     type: "bullets",
   },
+  autoplay: {
+    duration: 1000,
+    disableOnInteraction: true,
+  },
+  centeredSlides: true,
   breakpoints: {
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
     1024: {
-      slidesPerView: 3,
-      spaceBetween: 20,
+      slidesPerView: 3.5,
+      spaceBetween: 60,
     },
     768: {
       slidesPerView: 1,
