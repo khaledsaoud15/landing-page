@@ -1,4 +1,15 @@
-function toggleAccordion(index) {
+const hamburger = document.querySelector("#habmurger");
+const menue = document.querySelector("#menue");
+
+let isMenuOpen = false;
+
+hamburger.addEventListener("click", () => {
+  isMenuOpen = !isMenuOpen;
+  menue.classList.toggle("left-0", isMenuOpen);
+  menue.classList.toggle("-left-full", !isMenuOpen);
+});
+
+const toggleAccordion = (index) => {
   const allItems = document.querySelectorAll(".accordion-item");
   const currentItem = allItems[index];
   const content = currentItem.querySelector(".accordion-content");
@@ -24,7 +35,7 @@ function toggleAccordion(index) {
     currentItem.classList.remove("bg-saltygreen");
     currentItem.classList.add("bg-gray-200");
   }
-}
+};
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: 2.5,
@@ -51,7 +62,7 @@ const swiper = new Swiper(".swiper", {
     },
     300: {
       slidesPerView: 1,
-      spaceBetween: 3, 
+      spaceBetween: 3,
     },
   },
 });
