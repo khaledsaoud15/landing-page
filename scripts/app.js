@@ -49,17 +49,9 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 1,
       spaceBetween: 5,
     },
-    400: {
-      slidesPerView: 1,
-      spaceBetween: 3, // Minimize space for smaller devices
-    },
-    350: {
-      slidesPerView: 1,
-      spaceBetween: 3, // Minimize space for smaller devices
-    },
     300: {
       slidesPerView: 1,
-      spaceBetween: 3, // Minimize space for smaller devices
+      spaceBetween: 3, 
     },
   },
 });
