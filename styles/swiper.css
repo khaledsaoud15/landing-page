@@ -1,0 +1,22 @@
+.swiper-pagination-bullet {
+  color: transparent !important;
+  background: transparent !important;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet::after {
+  content: "";
+  background-image: url(../assets/images/star-inactive.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.swiper-pagination-bullet-active::after {
+  background-image: url(../assets/images/star-active.svg) !important;
+}

@@ -25,3 +25,33 @@ function toggleAccordion(index) {
     currentItem.classList.add("bg-gray-200");
   }
 }
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: "bullets",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 5,
+    },
+    400: {
+      slidesPerView: 1,
+      spaceBetween: 3, // Minimize space for smaller devices
+    },
+  },
+});
